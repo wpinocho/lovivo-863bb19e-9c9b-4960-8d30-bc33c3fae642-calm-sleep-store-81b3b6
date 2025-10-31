@@ -9,7 +9,6 @@ import { Button } from '@/components/ui/button'
 import { ShoppingCart } from 'lucide-react'
 import { useCartUI } from '@/components/CartProvider'
 import { useCart } from '@/contexts/CartContext'
-import { Input } from '@/components/ui/input'
 
 /**
  * EDITABLE TEMPLATE - EcommerceTemplate
@@ -60,6 +59,12 @@ export const EcommerceTemplate = ({
                 className="text-foreground/70 hover:text-foreground transition-colors"
               >
                 Home
+              </Link>
+              <Link 
+                to="/about" 
+                className="text-foreground/70 hover:text-foreground transition-colors"
+              >
+                About Us
               </Link>
               <Link 
                 to="/blog" 
@@ -126,6 +131,12 @@ export const EcommerceTemplate = ({
                 className="block text-white/70 hover:text-white transition-colors"
               >
                 Home
+              </Link>
+              <Link 
+                to="/about" 
+                className="block text-white/70 hover:text-white transition-colors"
+              >
+                About Us
               </Link>
               <Link 
                 to="/blog" 
